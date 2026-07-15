@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-15-starter-shadcn",
+  "name": "nextjs-16-starter-shadcn",
   "version": "1.0.0",
   "private": false,
-  "website": "https://nextjs-15-starter-shadcn.vercel.app/",
+  "website": "https://nextjs-16-starter-shadcn.vercel.app/",
   "license": "MIT",
   "packageManager": "pnpm@11.1.2",
   "scripts": {
