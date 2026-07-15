@@ -5,7 +5,7 @@
   "license": "MIT",
   "packageManager": "pnpm@11.1.2",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
