@@ -7,6 +7,7 @@ import pluginPromise from 'eslint-plugin-promise';
 import pluginReact from 'eslint-plugin-react';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+import tailwindCanonicalClasses from 'eslint-plugin-tailwind-canonical-classes';
 
 export default [
   {
@@ -32,8 +33,15 @@ export default [
   pluginReact.configs.flat.recommended, // ? https://github.com/jsx-eslint/eslint-plugin-react
   pluginReact.configs.flat['jsx-runtime'], // ? https://github.com/jsx-eslint/eslint-plugin-react
   eslintConfigPrettier, // ? https://github.com/prettier/eslint-config-prettier
+  ...tailwindCanonicalClasses.configs['flat/recommended'],
   {
     rules: {
+      'tailwind-canonical-classes/tailwind-canonical-classes': [
+        'warn',
+        {
+          cssPath: './src/app/globals.css',
+        },
+      ],
       'no-unused-vars': 'off',
       'react/react-in-jsx-scope': 'off',
       'react-hooks/exhaustive-deps': 'off',
