@@ -8,7 +8,7 @@ import Header from '@/components/header';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'NextJS 15 + Shadcn UI + TailwindCss 4 + Typescript',
+  title: 'NextJS 16 + Shadcn UI + TailwindCss 4 + Typescript',
   description: 'This is source base for NextJS',
 };
 
