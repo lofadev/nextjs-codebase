@@ -5,9 +5,10 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import pluginPromise from 'eslint-plugin-promise';
 import pluginReact from 'eslint-plugin-react';
+import tailwindCanonicalClasses from 'eslint-plugin-tailwind-canonical-classes';
+import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import tailwindCanonicalClasses from 'eslint-plugin-tailwind-canonical-classes';
 
 export default [
   {
@@ -35,6 +36,9 @@ export default [
   eslintConfigPrettier, // ? https://github.com/prettier/eslint-config-prettier
   ...tailwindCanonicalClasses.configs['flat/recommended'],
   {
+    plugins: {
+      'unused-imports': unusedImports,
+    },
     rules: {
       'tailwind-canonical-classes/tailwind-canonical-classes': [
         'warn',
@@ -49,6 +53,16 @@ export default [
       'react/prop-types': 'off',
       'newline-before-return': 'error',
       '@typescript-eslint/no-unused-vars': 'off',
+      'unused-imports/no-unused-imports': 'warn',
+      'unused-imports/no-unused-vars': [
+        'warn',
+        {
+          vars: 'all',
+          varsIgnorePattern: '^_',
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+        },
+      ],
       '@typescript-eslint/no-unused-expressions': 'off',
       'import/no-unresolved': 'off',
       'import/no-named-as-default': 'off',
