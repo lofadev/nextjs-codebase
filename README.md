@@ -6,15 +6,17 @@
 - [**Shadcn UI docs**](https://ui.shadcn.com/docs)
 - [**TailwindCSS 4 docs**](https://tailwindcss.com/docs)
 
-Welcome to the **Next.js 16 Starter** repository! This starter template is built with Next.js 16, React 19, TypeScript 5, Tailwind CSS 4, Shadcn UI and comes packed with several powerful tools and configurations to accelerate your project setup and streamline development workflows using VS Code.
+Welcome to the **Next.js 16 Starter** repository! This starter template is built with Next.js 16, React 19, TypeScript 7, Oxlint, Oxfmt, Node.js 24, pnpm 12, Tailwind CSS 4, Shadcn UI and comes packed with several powerful tools and configurations to accelerate your project setup and streamline development workflows using VS Code.
 
 ## 🚀 What's Included
 
 - **Next.js 16**
 - **React 19**
-- **TypeScript 5**
-- **ESLint 9**
-- **Prettier 3**
+- **TypeScript 7**
+- **Oxlint**
+- **Oxfmt**
+- **Node.js 24**
+- **pnpm 12**
 - **Tailwind CSS 4**
 - **Shadcn UI**
 - **App Directory**
