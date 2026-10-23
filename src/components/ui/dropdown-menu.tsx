@@ -3,8 +3,8 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
-import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 
+import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { CheckIcon, ChevronRightIcon, CircleIcon } from 'lucide-react';
 
 function DropdownMenu({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Root>) {
