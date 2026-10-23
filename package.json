@@ -34,7 +34,7 @@
     "@types/react-dom": "19.3.0",
     "eslint-plugin-tailwind-canonical-classes": "^1.6.0",
     "husky": "^9.1.7",
-    "lint-staged": "^12.3.2",
+    "lint-staged": "^17.6.0",
     "oxfmt": "^0.74.0",
     "oxlint": "^1.89.0",
     "postcss": "^8.5.31",
